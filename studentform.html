@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/form.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1> Bill School Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend><h2>School Registration Form</h2></legend>
+
+    Child Name:<input type="text" placeholder="name">
+    <br>
+    <br>
+    Date of Birth:<input type="date" placeholder="Date">
+    <br>
+    <br>
+    Address: <textarea name="address">
+    </textarea> 
+    <br>
+    <br>
+    Gender:
+            <input type="radio" value="m" name="gender"> male
+            <input type="radio" value="f" name="gender"> female
+            <br>
+    <br>
+            
+    Country:
+    <select>
+        <option value="india">india</option>
+        <option value="india">Pakistan</option>
+    </select> 
+    <br>
+    <br>  
+    Hobbies:
+    <input type="checkbox"> game
+    <input type="checkbox"> painting
+    <br>
+    <br> 
+    Image:
+    <input type="file" name="image">
+    <br>
+    <br>
+    Email:
+    <input type="email" placeholder="email"> 
+    <br>
+    <br>
+    Passward:
+    <input type="password">
+    <br>
+    <br>
+    
+
+    Contact:
+    <input type="number" placeholder="number">
+    <br>
+    <br>
+    Age:
+    <input type="number" placeholder="number">
+    <br>
+    <br>
+    secet:
+    <input type="hidden">
+    <br>
+    <br>
+    Zip Code:
+    <input type="number">
+    <br>
+    <br>
+    Grade Completed
+    <textarea></textarea>
+    <br>
+    <br>
+    Range:
+    <input type="range">
+    <br>
+    <br>
+
+    Submit:
+    <input type="submit">
+    
+
+</fieldset></form>
+
+
+    
+
+
+
+    
+    
+    
+    
+
+
+         
+
+
+    
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
